@@ -1,0 +1,18 @@
+[project]
+name = "file-sorter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "inquirerpy>=0.3.4",
+    "tinydb>=4.9.0",
+    "typer>=0.29.1",
+]
+
+[project.scripts]
+file-sorter = "file_sorter.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
